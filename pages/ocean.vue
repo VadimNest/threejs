@@ -217,6 +217,8 @@ onUnmounted(() => {
 </script>
 
 <template>
+  <nuxt-link class="go-back" to="/">⭠ на главную</nuxt-link>
+
   <ThreeContainer
     ref="threeContainerRef"
     :camera-position="[2.5, 0.2, 2.5]"

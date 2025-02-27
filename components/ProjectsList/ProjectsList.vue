@@ -16,6 +16,10 @@ const projects = [
     name: '04 - Остров',
     component: 'island',
   },
+  {
+    name: '05 - Взрыв частиц',
+    component: 'explosion-particles',
+  },
 ];
 </script>
 
@@ -25,7 +29,7 @@ const projects = [
       <h2 class="projects__title">Projects:</h2>
       <ul>
         <li v-for="project in projects" :key="project.name" class="projects__link">
-          <NuxtLink :to="project.component" target="_blank">{{ project.name }}</NuxtLink>
+          <NuxtLink :to="project.component">{{ project.name }}</NuxtLink>
         </li>
       </ul>
     </div>

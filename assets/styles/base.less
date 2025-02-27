@@ -60,3 +60,39 @@ body {
   width: 100vw;
   height: 100vh;
 }
+
+.go-back {
+  position: absolute;
+  top: 32px;
+  left: 32px;
+  z-index: 1;
+
+  color: @c-white;
+  font-size: 14px;
+  text-decoration: none;
+
+  @media @mobile {
+    top: 50px;
+  }
+}
+
+.helper {
+  position: absolute;
+  top: 32px;
+  left: 50%;
+  z-index: 1;
+
+  color: @c-white;
+  font-size: 14px;
+  text-decoration: none;
+
+  transform: translateX(-50%);
+  pointer-events: none;
+
+  @media @mobile {
+    top: 82px;
+    left: 32px;
+
+    transform: unset;
+  }
+}

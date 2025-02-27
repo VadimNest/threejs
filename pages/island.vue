@@ -277,6 +277,8 @@ const scene = ref<THREE.Scene | null>(null);
 </script>
 
 <template>
+  <nuxt-link class="go-back" to="/">⭠ на главную</nuxt-link>
+
   <ThreeContainer
     ref="threeContainerRef"
     :camera-position="[0.3, 0.7, 3]"
