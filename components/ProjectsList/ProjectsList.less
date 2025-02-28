@@ -1,6 +1,8 @@
 @import "assets/styles/_helpers";
 
 .projects {
+  pointer-events: none;
+
   &__container {
     max-width: 1440px;
     margin: 0 auto;
@@ -16,6 +18,10 @@
   }
 
   &__link {
+    width: fit-content;
+
+    pointer-events: all;
+
     a {
       display: inline-block;
       border-bottom: 1px solid transparent;

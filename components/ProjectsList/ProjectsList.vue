@@ -19,7 +19,7 @@ const projects = [
   {
     name: '05 - Взрыв частиц',
     component: 'explosion-particles',
-  },
+  }
 ];
 </script>
 
