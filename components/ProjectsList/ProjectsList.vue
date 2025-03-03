@@ -24,6 +24,10 @@ const projects = [
     name: '06 - Полет через космос',
     component: 'space-fly',
   },
+  {
+    name: '07 - Модель из частиц',
+    component: 'particles-model',
+  },
 ];
 </script>
 
