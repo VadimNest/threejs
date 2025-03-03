@@ -54,7 +54,8 @@ const initScene = (scene: THREE.Scene) => {
   const gltfLoader = new GLTFLoader();
   gltfLoader.setDRACOLoader(dracoLoader);
 
-  gltfLoader.load('models/island/Fox.gltf', (gltf) => {
+  // gltfLoader.load('models/island/Fox.gltf', (gltf) => {
+  gltfLoader.load('models/particles-model/dragon.gltf', (gltf) => {
     const positions = [];
     let totalVertices = 0;
 
@@ -99,7 +100,7 @@ const initScene = (scene: THREE.Scene) => {
     });
 
     particles = new THREE.Points(particlesGeometry, particlesMaterial);
-    particles.scale.set(0.03, 0.03, 0.03);
+    particles.scale.set(2, 2, 2);
     particles.position.set(0, -1, 0);
     particles.rotation.y = -Math.PI / 4;
     scene.add(particles);
