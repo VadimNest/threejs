@@ -54,7 +54,6 @@ const initScene = (scene: THREE.Scene) => {
   const gltfLoader = new GLTFLoader();
   gltfLoader.setDRACOLoader(dracoLoader);
 
-  // gltfLoader.load('models/island/Fox.gltf', (gltf) => {
   gltfLoader.load('models/particles-model/dragon.gltf', (gltf) => {
     const positions = [];
     let totalVertices = 0;

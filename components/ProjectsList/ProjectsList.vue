@@ -28,6 +28,10 @@ const projects = [
     name: '07 - Модель из частиц',
     component: 'particles-model',
   },
+  {
+    name: '08 - Модель tesla',
+    component: 'tesla',
+  },
 ];
 </script>
 
